@@ -3,6 +3,8 @@ import pandas as pd
 import nltk
 from tensorflow import keras
 
+nltk.download('punkt')
+
 def user_in(text, data_columns):
     snow = nltk.stem.SnowballStemmer('english')
     columns = data_columns.copy()
